@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var sayHelloLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sayHelloButtonPushed(_ sender: UIButton) {
+        sayHelloLabel.isHidden = !sayHelloLabel.isHidden
+    }
 
 }
 

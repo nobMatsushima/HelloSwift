@@ -18,20 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mro-mY-TGS">
-                                <frame key="frameInset" minX="16" minY="310" width="343" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mro-mY-TGS">
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-S3-MBV">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="sayHelloButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HM0-XK-iy5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LOy-S3-MBV" secondAttribute="bottom" constant="20" id="3yR-32-AJM"/>
+                            <constraint firstItem="mro-mY-TGS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6mD-gu-QYH"/>
+                            <constraint firstItem="mro-mY-TGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wye-Gj-bsZ"/>
+                            <constraint firstItem="LOy-S3-MBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yP5-08-qXq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sayHelloLabel" destination="mro-mY-TGS" id="oUn-zT-oOu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-80.799999999999997" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>
