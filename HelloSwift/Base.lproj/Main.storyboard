@@ -30,14 +30,18 @@
                                     <action selector="sayHelloButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HM0-XK-iy5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-Bc-VtM">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-Bc-VtM">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="8FU-wA-F0p"/>
                                     <constraint firstAttribute="width" constant="50" id="dl0-Sg-BJx"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yiv-ju-Q5g" appends="YES" id="7f0-78-H0V"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="BDW-Bc-VtM" firstAttribute="top" secondItem="mro-mY-TGS" secondAttribute="bottom" constant="8" id="0Em-tf-Jsx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LOy-S3-MBV" secondAttribute="bottom" constant="20" id="3yR-32-AJM"/>
@@ -53,6 +57,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yiv-ju-Q5g">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="XY9-8j-bH4"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-80.799999999999997" y="135.38230884557723"/>
         </scene>

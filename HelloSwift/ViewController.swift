@@ -31,6 +31,16 @@ class ViewController: UIViewController {
         sayHelloLabel.isHidden = swiftModel.isSayingHello
         swiftImageView.isHidden = swiftModel.isShowingBody
     }
+    
+    // Ref: https://www.raywenderlich.com/76020/using-uigesturerecognizer-with-swift-tutorial_
+    @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
+        let translation = recognizer.translation(in:self.view)
+        if let view = recognizer.view {
+            view.center = CGPoint(x:view.center.x + translation.x,
+                                  y:view.center.y + translation.y)
+        }
+        recognizer.setTranslation(CGPoint.zero, in: self.view)
+    }
 
 }
 
