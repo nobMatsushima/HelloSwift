@@ -9,20 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var sayHelloLabel: UILabel!
+    @IBOutlet weak var swiftImageView: UIImageView!
 
+    var swiftModel: SwiftModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        swiftModel = SwiftModel()
+        updateViews()
     }
 
     @IBAction func sayHelloButtonPushed(_ sender: UIButton) {
-        sayHelloLabel.isHidden = !sayHelloLabel.isHidden
+        swiftModel.swichState()
+        updateViews()
+    }
+    
+    func updateViews() {
+        sayHelloLabel.isHidden = swiftModel.isSayingHello
+        swiftImageView.isHidden = swiftModel.isShowingBody
     }
 
 }

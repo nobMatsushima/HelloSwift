@@ -14,6 +14,7 @@
 		C8B9BB161E1950D500A72481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B9BB141E1950D500A72481 /* LaunchScreen.storyboard */; };
 		C8B9BB211E1950D500A72481 /* HelloSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9BB201E1950D500A72481 /* HelloSwiftTests.swift */; };
 		C8B9BB2C1E1950D500A72481 /* HelloSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9BB2B1E1950D500A72481 /* HelloSwiftUITests.swift */; };
+		C8B9BB3A1E20FFCC00A72481 /* SwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9BB391E20FFCC00A72481 /* SwiftModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C8B9BB271E1950D500A72481 /* HelloSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B9BB2B1E1950D500A72481 /* HelloSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUITests.swift; sourceTree = "<group>"; };
 		C8B9BB2D1E1950D500A72481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B9BB391E20FFCC00A72481 /* SwiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C8B9BB0B1E1950D500A72481 /* AppDelegate.swift */,
 				C8B9BB0D1E1950D500A72481 /* ViewController.swift */,
+				C8B9BB391E20FFCC00A72481 /* SwiftModel.swift */,
 				C8B9BB0F1E1950D500A72481 /* Main.storyboard */,
 				C8B9BB121E1950D500A72481 /* Assets.xcassets */,
 				C8B9BB141E1950D500A72481 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B9BB0E1E1950D500A72481 /* ViewController.swift in Sources */,
+				C8B9BB3A1E20FFCC00A72481 /* SwiftModel.swift in Sources */,
 				C8B9BB0C1E1950D500A72481 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

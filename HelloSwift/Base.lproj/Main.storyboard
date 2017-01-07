@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mro-mY-TGS">
@@ -30,17 +30,26 @@
                                     <action selector="sayHelloButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HM0-XK-iy5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-Bc-VtM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8FU-wA-F0p"/>
+                                    <constraint firstAttribute="width" constant="50" id="dl0-Sg-BJx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BDW-Bc-VtM" firstAttribute="top" secondItem="mro-mY-TGS" secondAttribute="bottom" constant="8" id="0Em-tf-Jsx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LOy-S3-MBV" secondAttribute="bottom" constant="20" id="3yR-32-AJM"/>
                             <constraint firstItem="mro-mY-TGS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6mD-gu-QYH"/>
+                            <constraint firstItem="BDW-Bc-VtM" firstAttribute="centerX" secondItem="mro-mY-TGS" secondAttribute="centerX" id="m9F-3V-Jcn"/>
                             <constraint firstItem="mro-mY-TGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wye-Gj-bsZ"/>
                             <constraint firstItem="LOy-S3-MBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yP5-08-qXq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="sayHelloLabel" destination="mro-mY-TGS" id="oUn-zT-oOu"/>
+                        <outlet property="swiftImageView" destination="BDW-Bc-VtM" id="vk1-57-Vge"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,4 +57,7 @@
             <point key="canvasLocation" x="-80.799999999999997" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiftLogo" width="500" height="450"/>
+    </resources>
 </document>
